@@ -3,6 +3,7 @@ A Python password manager with a Tkinter GUI and encryption with SQLCipher.
 
 ## About
 
+### Features
 - Multiple accounts
 - Password generation
 - Encryption with SQLCipher
