@@ -11,7 +11,7 @@ A Python password manager with a Tkinter GUI and encryption with SQLCipher.
 ## Installation
 ### Binaries
 
-Windows and Linux binaries are provided and is the recommended way to try out the application. Please place in a directory where you have write permissions, the program will create a `data` directory to store each created `*.db` file.
+Windows and Linux binaries are provided and are the recommended way to try out the application. Please place in a directory where you have write permissions, the program will create a `data` directory to store each created `*.db` file.
 
 ### Source
 
@@ -30,3 +30,4 @@ Windows and Linux binaries are provided and is the recommended way to try out th
 ##### Windows
 
 Compiling SQLCipher on Windows is trickier and not recommended. However, if you must, I recommend the excellent guide by [Dylan L Jones](https://github.com/dylanljones) included in his Pyrekordbox project: [SQLCipher Windows Instructions](https://github.com/dylanljones/pyrekordbox/blob/master/INSTALLATION.md#windows) 
+
