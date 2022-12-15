@@ -14,6 +14,8 @@ A Python password manager with a Tkinter GUI and encryption with SQLCipher.
 
 Windows and Linux binaries are provided and are the recommended way to try out the application. Please place in a directory where you have write permissions, the program will create a `data` directory to store each created `*.db` file.
 
+For Linux make sure to `chmod +x PyPassManager-Linux` to allow the program to execute
+
 ### Source
 
 - Clone the project using  `git clone https://github.com/travis-aaron/py_password_manager.git`
