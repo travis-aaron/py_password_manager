@@ -215,7 +215,7 @@ class AddNewPassword:
         self.passwd_entry.insert(0, entry['Password'])
 
         self.apply_button.configure(
-            command=lambda: self.update_entry(row_number, service))
+            command=lambda: self.update_entry(service))
 
     def update_entry(self, service):
         entry = {}

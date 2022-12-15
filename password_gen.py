@@ -14,17 +14,17 @@ def password_gen():
     # Generate two lists, one with symbols and one with letters/numbers
     # Pop the symbols out of both lists at random and place them into new list
     db_settings = return_settings()
-    if db_settings != "uninitialized":
-        password_length = db_settings[0]["Password Length"]
-        ambiguous_chars = db_settings[0]["Ambiguous Symbols"]
-        symbol_count = db_settings[0]["Number of Symbols"]
+    if db_settings and db_settings != "uninitialized":
+        password_length = db_settings["Password Length"][0]
+        ambiguous_chars = db_settings["Ambiguous Symbols"]
+        symbol_count = db_settings["Number of Symbols"][0]
     else:
         password_length = int(DEFAULT_SETTINGS[1])
         ambiguous_chars = DEFAULT_SETTINGS[0]
         symbol_count = int(DEFAULT_SETTINGS[2])
     pass_list = []
 
-    for _ in range(password_length-symbol_count):
+    for _ in range(int(password_length)-int(symbol_count)):
         char_type = random.randint(0, 1)
         if char_type == 0 and ambiguous_chars == 0:  # Letters
             pass_list.append(

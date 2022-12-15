@@ -167,15 +167,15 @@ class Settings:
         self.settings_cancel.place(x=95, y=160)
         self.settings_default.place(x=175, y=160)
 
-        settings = self.load_settings()
+        self.settings = self.load_settings()
 
-        if settings != "uninitialized":
+        if self.settings != "uninitialized":
             self.passwd_symbol_entry.delete(0, "end")
             self.passwd_symbol_entry.insert(0,
-                                            settings['Number of Symbols'])
+                                            self.settings['Number of Symbols'][0])
             self.passwd_len_entry.delete(0, "end")
-            self.passwd_len_entry.insert(0, settings["Password Length"])
-            self.ambiguous_var.set(settings["Ambiguous Symbols"])
+            self.passwd_len_entry.insert(0, self.settings["Password Length"][0])
+            self.ambiguous_var.set(self.settings["Ambiguous Symbols"])
         else:
             self.restore_defaults()
 

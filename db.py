@@ -56,7 +56,8 @@ def return_settings():
             settings["Password Length"] = entry.pass_length,
             settings["Ambiguous Symbols"] = entry.ambiguous_symbols
         return settings
-    except Exception:
+    except Exception as e:
+        print(e)
         return "uninitialized"
 
 
