@@ -12,7 +12,7 @@ A Python password manager with a Tkinter GUI and encryption with SQLCipher.
 ## Installation
 ### Binaries
 
-Windows and Linux binaries are provided and are the recommended way to try out the application. Please place in a directory where you have write permissions, the program will create a `data` directory to store each created `*.db` file.
+Windows and Linux binaries are provided and are the recommended way to try out the application. Please place in a directory where you have write permissions, the program will create a `data` directory to store each created `*.db` file. For Windows, you may need to make a new directory and place the binary inside. On Windows 11 this was required, the program will not work just running out of your Downloads folder.
 
 For Linux make sure to `chmod +x PyPassManager-Linux` to allow the program to execute
 
